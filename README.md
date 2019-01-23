@@ -1,4 +1,13 @@
-# Kirby Plainkit
+# Quick Start
+
+```sh
+$ git clone git@github.com:beebmx/kirby-starterkit.git
+$ cd kirby-starterkit
+$ touch .env
+$ composer install
+```
+
+# Kirby Starterkit
 
 Kirby is a file-based CMS.
 Easy to setup. Easy to use. Flexible as hell.
