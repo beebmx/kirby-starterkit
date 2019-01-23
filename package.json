@@ -1,0 +1,40 @@
+{
+  "name": "kirby-starterkit",
+  "version": "1.0.0",
+  "description": "Kirby is a file-based CMS. Easy to setup. Easy to use. Flexible as hell.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beebmx/kirby-starterkit.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beebmx/kirby-starterkit/issues"
+  },
+  "homepage": "https://github.com/beebmx/kirby-starterkit#readme",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "cross-env": "^5.2.0",
+    "laravel-mix": "^4.0.14",
+    "laravel-mix-tailwind": "^0.1.0",
+    "lodash": "^4.17.11",
+    "resolve-url-loader": "2.3.1",
+    "sass": "^1.16.1",
+    "sass-loader": "7.*",
+    "stylelint-config-recommended": "^2.1.0",
+    "tailwindcss": "^0.7.4",
+    "vue": "^2.5.22",
+    "vue-template-compiler": "^2.5.22"
+  },
+  "dependencies": {}
+}

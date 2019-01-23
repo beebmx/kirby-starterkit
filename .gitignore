@@ -1,0 +1,61 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+/kirby
+/storage/*.key
+/vendor
+/node_modules
+
+# Temporary files
+# ---------------
+
+/public/media/*
+!/public/media/.gitkeep
+
+# -------------SECURITY-------------
+# NEVER publish these files via Git!
+# -------------SECURITY-------------
+
+# Cache Files
+# ---------------
+
+/storage/cache/*
+!/storage/cache/.gitkeep
+
+# View Files
+# ---------------
+/storage/views/*
+!/storage/views/.gitkeep
+
+# Accounts
+# ---------------
+
+/storage/accounts/*
+!/storage/accounts/.gitkeep
+
+# Sessions
+# ---------------
+
+/storage/sessions/*
+!/storage/sessions/.gitkeep
+
+# License
+# ---------------
+/site/config/.license
+
+# Configuration files
+# ---------------
+.env
+.npmrc
+composer.lock
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+
+# Plugins
+# ---------------
+/site/plugins/kirby-env
+/site/plugins/kirby-blade
