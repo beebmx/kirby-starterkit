@@ -21,7 +21,8 @@
         "php": ">=7.1.0",
         "getkirby/cms": "^3.0",
         "beebmx/kirby-env": "^1.0",
-        "beebmx/kirby-blade": "^1.0"
+        "beebmx/kirby-blade": "^1.0",
+        "k-community/markdown-field": "^1.0"
     },
     "config": {
         "optimize-autoloader": true
