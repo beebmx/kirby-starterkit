@@ -28,7 +28,7 @@ return [
             'password' => env('MAIL_PASSWORD', ''),
         ]
     ],
-    'beebmx.kirby-blade-playground.ifs' => [
+    'beebmx.kirby-blade.ifs' => [
         'env' => function ($environment) {
             return env('APP_ENV', 'production') === $environment;
         },
