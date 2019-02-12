@@ -30,7 +30,7 @@ return [
     ],
     'beebmx.kirby-blade.ifs' => [
         'env' => function ($environment) {
-            return env('APP_ENV', 'production') === $environment;
+            return env('KIRBY_ENV', 'production') === $environment;
         },
     ],
 ];
