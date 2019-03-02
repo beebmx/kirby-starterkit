@@ -12,7 +12,7 @@ if (!function_exists('mix')) {
      */
     function mix($path, $manifestDirectory = '')
     {
-        static $manifest;
+        static $manifest = [];
         $publicFolder = '';
         $rootPath = $_SERVER['DOCUMENT_ROOT'];
         $publicPath = $rootPath . $publicFolder;

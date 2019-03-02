@@ -7,7 +7,7 @@
     },
     "extends": [
         "eslint:recommended",
-        "plugin:vue/essential"
+        "plugin:vue/recommended"
     ],
     "parserOptions": {
         "ecmaFeatures": {
@@ -28,7 +28,14 @@
             "error", {
                 "allow": ["log", "warn", "error"]
             }
-        ]
+        ],
+        "vue/max-attributes-per-line": ["warn", {
+            "singleline": 1,
+            "multiline": {
+              "max": 1,
+              "allowFirstLine": true
+            }
+        }]
     },
     "globals": {
         "_": false,
