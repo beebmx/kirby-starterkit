@@ -1,5 +1,6 @@
 let mix = require('laravel-mix');
 require('laravel-mix-tailwind');
+require('laravel-mix-purgecss');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -12,13 +13,16 @@ require('laravel-mix-tailwind');
  */
 
 mix
-   .js('resources/js/app.js', 'public/js')
-   .sass('resources/scss/app.scss', 'public/css')
-   .tailwind('tailwind.config.js')
-   .setPublicPath('public/');
+    .js('resources/js/app.js', 'public/js')
+    .sass('resources/scss/app.scss', 'public/css')
+    .tailwind('tailwind.config.js')
+    .setPublicPath('public/')
 
 if (mix.inProduction()) {
-    mix.version();
+    mix.version()
+       .purgeCss({
+           folders: ['site/templates'],
+       });
 }
 
 // Full API

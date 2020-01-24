@@ -15,15 +15,21 @@ if (!function_exists('mix')) {
         static $manifest = [];
         $publicFolder = '';
         $rootPath = $_SERVER['DOCUMENT_ROOT'];
+        $rootShellPath = dirname(dirname(__DIR__));
         $publicPath = $rootPath . $publicFolder;
+        $publicShellPath = '/public';
         if ($manifestDirectory && !starts_with($manifestDirectory, '/')) {
             $manifestDirectory = "/{$manifestDirectory}";
         }
         if (!$manifest) {
-            if (!file_exists($manifestPath = ($rootPath . $manifestDirectory . '/mix-manifest.json')) && !file_exists($manifestPath = ($rootPath . $manifestDirectory . 'mix-manifest.json'))) {
+            if (!file_exists($manifestPath = ($rootPath . $manifestDirectory . '/mix-manifest.json')) && !file_exists($manifestPath = ($rootPath . $manifestDirectory . 'mix-manifest.json')) && !file_exists($manifestShellPath = ($rootShellPath . $publicShellPath  . $manifestDirectory . '/mix-manifest.json'))) {
                 throw new Exception('The Mix manifest does not exist.');
             }
-            $manifest = json_decode(file_get_contents($manifestPath), true);
+            if ($manifestShellPath ?? false) {
+                $manifest = json_decode(file_get_contents($manifestShellPath ?? null), true);
+            } else {
+                $manifest = json_decode(file_get_contents($manifestPath), true);
+            }
         }
         if (!starts_with($path, '/')) {
             $path = "/{$path}";
@@ -36,7 +42,7 @@ if (!function_exists('mix')) {
             );
         }
         return file_exists($publicPath . ($manifestDirectory . '/hot'))
-                    ? "http://localhost:8080{$manifest[$path]}"
-                    : $manifestDirectory . $manifest[$path];
+            ? "http://localhost:8080{$manifest[$path]}"
+            : $manifestDirectory . $manifest[$path];
     }
 }
