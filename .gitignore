@@ -63,3 +63,5 @@ yarn-error.log
 /site/plugins/kirby-blade
 /site/plugins/markdown-field
 /site/plugins/editor
+/site/plugins/kirby-builder
+/site/plugins/locator
