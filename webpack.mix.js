@@ -17,12 +17,17 @@ mix
     .sass('resources/scss/app.scss', 'public/css')
     .tailwind('tailwind.config.js')
     .setPublicPath('public/')
+    .purgeCss({
+        content: [
+            'site/templates/**/*.html',
+            'site/templates/**/*.php',
+            'resources/**/*.js',
+            'resources/**/*.vue'
+        ],
+    })
 
 if (mix.inProduction()) {
     mix.version()
-       .purgeCss({
-           folders: ['site/templates'],
-       });
 }
 
 // Full API
