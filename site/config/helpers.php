@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Str;
+
 if (!function_exists('mix')) {
     /**
      * Get the path to a versioned Mix file.
@@ -18,11 +20,11 @@ if (!function_exists('mix')) {
         $rootShellPath = dirname(dirname(__DIR__));
         $publicPath = $rootPath . $publicFolder;
         $publicShellPath = '/public';
-        if ($manifestDirectory && !starts_with($manifestDirectory, '/')) {
+        if ($manifestDirectory && !Str::startsWith($manifestDirectory, '/')) {
             $manifestDirectory = "/{$manifestDirectory}";
         }
         if (!$manifest) {
-            if (!file_exists($manifestPath = ($rootPath . $manifestDirectory . '/mix-manifest.json')) && !file_exists($manifestPath = ($rootPath . $manifestDirectory . 'mix-manifest.json')) && !file_exists($manifestShellPath = ($rootShellPath . $publicShellPath  . $manifestDirectory . '/mix-manifest.json'))) {
+            if (!file_exists($manifestPath = ($rootPath . $manifestDirectory . '/mix-manifest.json')) && !file_exists($manifestPath = ($rootPath . $manifestDirectory . 'mix-manifest.json')) && !file_exists($manifestShellPath = ($rootShellPath . $publicShellPath . $manifestDirectory . '/mix-manifest.json'))) {
                 throw new Exception('The Mix manifest does not exist.');
             }
             if ($manifestShellPath ?? false) {
@@ -31,7 +33,7 @@ if (!function_exists('mix')) {
                 $manifest = json_decode(file_get_contents($manifestPath), true);
             }
         }
-        if (!starts_with($path, '/')) {
+        if (!Str::startsWith($path, '/')) {
             $path = "/{$path}";
         }
         $path = $publicFolder . $path;
