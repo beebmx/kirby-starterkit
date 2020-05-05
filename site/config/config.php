@@ -1,10 +1,12 @@
 <?php
 
+use Beebmx\KirbyEnv;
+
 require_once 'helpers.php';
 $base = dirname(dirname(__DIR__));
 $storage = $base . '/storage';
 
-(new \Beebmx\KirbyEnv($base))->load();
+KirbyEnv::load($base);
 
 return [
     'debug' => env('KIRBY_DEBUG', false),
