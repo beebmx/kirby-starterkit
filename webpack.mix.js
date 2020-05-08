@@ -1,6 +1,5 @@
 let mix = require('laravel-mix');
 require('laravel-mix-tailwind');
-require('laravel-mix-purgecss');
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -17,14 +16,6 @@ mix
     .sass('resources/scss/app.scss', 'public/css')
     .tailwind('tailwind.config.js')
     .setPublicPath('public/')
-    .purgeCss({
-        content: [
-            'site/templates/**/*.html',
-            'site/templates/**/*.php',
-            'resources/**/*.js',
-            'resources/**/*.vue'
-        ],
-    })
 
 if (mix.inProduction()) {
     mix.version()
