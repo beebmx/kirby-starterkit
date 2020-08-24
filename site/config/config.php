@@ -14,6 +14,12 @@ return [
         'install' => env('KIRBY_INSTALL', false),
         'slug' => env('KIRBY_PANEL', 'panel')
     ],
+    'session' => [
+        'durationNormal' => (int) env('KIRBY_SESSION_DURATION', 7200),
+        'durationLong' => (int) env('KIRBY_SESSION_LONG_DURATION', 1209600),
+        'timeout' => (int) env('KIRBY_SESSION_TIMEOUT', 1800),
+        'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
+    ],
     'api' => env('KIRBY_API', true),
     'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     'hooks' => require_once 'hooks.php',
