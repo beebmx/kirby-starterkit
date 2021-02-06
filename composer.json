@@ -21,7 +21,7 @@
         "php": "^7.3|^7.4|^8.0",
         "getkirby/cms": "^3.0",
         "beebmx/kirby-env": "^2.0",
-        "beebmx/kirby-blade": "^2.1",
+        "beebmx/kirby-blade": "^3.0",
         "k-community/markdown-field": "^1.0",
         "getkirby/editor": "^1.0",
         "sylvainjule/locator": "^1.0"
