@@ -21,11 +21,13 @@
         "php": "^7.3|^7.4|^8.0",
         "getkirby/cms": "^3.0",
         "beebmx/kirby-env": "^3.0",
-        "beebmx/kirby-blade": "^3.1",
-        "k-community/markdown-field": "^1.0",
-        "sylvainjule/locator": "^1.0"
+        "beebmx/kirby-blade": "^3.2",
+        "k-community/markdown-field": "^1.0"
     },
     "config": {
-        "optimize-autoloader": true
+        "optimize-autoloader": true,
+        "allow-plugins": {
+            "getkirby/composer-installer": true
+        }
     }
 }

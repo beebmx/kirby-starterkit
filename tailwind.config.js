@@ -1,5 +1,4 @@
 module.exports = {
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {},
   },
@@ -12,12 +11,10 @@ module.exports = {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/line-clamp'),
   ],
-  purge: {
-    content: [
-      'site/templates/**/*.html',
-      'site/templates/**/*.php',
-      'resources/**/*.js',
-      'resources/**/*.vue'
-    ],
-  },
+  content: [
+    'site/templates/**/*.html',
+    'site/templates/**/*.php',
+    'resources/**/*.js',
+    'resources/**/*.vue',
+  ],
 }
