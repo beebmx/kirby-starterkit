@@ -1,1 +1,7 @@
-{}
+{
+    "tabWidth": 4,
+    "wrapAttributes": "auto",
+    "sortTailwindcssClasses": true,
+    "endWithNewLine": true,
+    "plugins": ["@shufo/prettier-plugin-blade"]
+}
