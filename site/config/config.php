@@ -3,7 +3,7 @@
 use Beebmx\KirbyEnv;
 
 require_once 'helpers.php';
-$base = dirname(dirname(__DIR__));
+$base = dirname(__DIR__, 2);
 $storage = $base . '/storage';
 
 KirbyEnv::load($base);
