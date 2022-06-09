@@ -1,4 +1,5 @@
-let mix = require('laravel-mix');
+let mix = require("laravel-mix");
+const path = require("path");
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -10,19 +11,26 @@ let mix = require('laravel-mix');
  |
  */
 
-mix
-  .js('resources/js/app.js', 'js')
-  .postCss('resources/css/app.css', 'css', [
-    require('postcss-import'),
-    require('tailwindcss/nesting'),
-    require('tailwindcss'),
-    require('autoprefixer'),
+mix.js("resources/js/app.js", "js")
+  .postCss("resources/css/app.css", "css", [
+    require("postcss-import"),
+    require("tailwindcss/nesting"),
+    require("tailwindcss"),
+    require("autoprefixer")
   ])
-  .setPublicPath('public/')
-  .disableSuccessNotifications()
+  .alias({
+    "@": path.join(__dirname, "resources/js")
+  })
+  .options({
+    autoprefixer: {
+      overrideBrowserslist: ["last 4 versions"]
+    }
+  })
+  .setPublicPath("public/")
+  .disableSuccessNotifications();
 
 if (mix.inProduction()) {
-    mix.version()
+  mix.version();
 }
 
 // Full API

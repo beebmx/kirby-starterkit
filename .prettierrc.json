@@ -1,7 +1,8 @@
 {
     "tabWidth": 4,
-    "wrapAttributes": "auto",
+    "wrapAttributes": "preserve-aligned",
     "sortTailwindcssClasses": true,
     "endWithNewLine": true,
+    "singleQuote": false,
     "plugins": ["@shufo/prettier-plugin-blade"]
 }

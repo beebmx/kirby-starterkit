@@ -1,20 +1,21 @@
+/** @type {import ("tailwindcss").Config}*/
 module.exports = {
   theme: {
-    extend: {},
+    extend: {}
   },
   variants: {
-    extend: {},
+    extend: {}
   },
   plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/line-clamp'),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/line-clamp")
   ],
   content: [
-    'site/templates/**/*.html',
-    'site/templates/**/*.php',
-    'resources/**/*.js',
-    'resources/**/*.vue',
-  ],
-}
+    "site/templates/**/*.html",
+    "site/templates/**/*.php",
+    "resources/**/*.js",
+    "resources/**/*.vue"
+  ]
+};
