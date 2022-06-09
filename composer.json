@@ -20,8 +20,8 @@
     "require": {
         "php": "^7.3|^7.4|^8.0",
         "getkirby/cms": "^3.0",
-        "beebmx/kirby-env": "^3.0",
-        "beebmx/kirby-blade": "^3.2",
+        "beebmx/kirby-env": "^4.0",
+        "beebmx/kirby-blade": "^4.0",
         "k-community/markdown-field": "^1.0"
     },
     "config": {
