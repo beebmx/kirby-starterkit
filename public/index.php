@@ -1,5 +1,7 @@
 <?php
 
+const KIRBY_HELPER_E = false;
+
 include '../vendor/autoload.php';
 
 $kirby = new Kirby([
