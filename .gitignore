@@ -11,6 +11,11 @@ Icon
 .php_cs.cache
 .php-cs-fixer.cache
 
+# Vite Build files
+# ---------------
+
+/public/build
+
 # Temporary files
 # ---------------
 
