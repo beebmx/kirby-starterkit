@@ -40,5 +40,16 @@ return [
         'env' => function ($environment) {
             return env('KIRBY_ENV', 'production') === $environment;
         },
+        'local' => function () {
+            return env('KIRBY_ENV', 'production') === 'local';
+        },
+        'production' => function () {
+            return env('KIRBY_ENV', 'production') === 'production';
+        },
+    ],
+    'beebmx.kirby-blade.directives' => [
+        'ray' => function ($expression) {
+            return "<?php ray($expression); ?>";
+        },
     ],
 ];
