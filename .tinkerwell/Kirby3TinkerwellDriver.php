@@ -3,6 +3,10 @@
 use Tinkerwell\ContextMenu\Label;
 use Tinkerwell\ContextMenu\OpenURL;
 
+const KIRBY_HELPER_DUMP = false;
+const KIRBY_HELPER_E = false;
+const KIRBY_HELPER_GO = false;
+
 class Kirby3TinkerwellDriver extends TinkerwellDriver
 {
     public function canBootstrap($projectPath)
@@ -17,7 +21,7 @@ class Kirby3TinkerwellDriver extends TinkerwellDriver
 
         $kirby = new Kirby([
             'roots' => [
-                'index' => __DIR__,
+                'index' => $projectPath . '/public',
                 'base' => $base = $projectPath,
                 'content' => $base . '/content',
                 'site' => $base . '/site',

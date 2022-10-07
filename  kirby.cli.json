@@ -1,0 +1,12 @@
+{
+    "roots": {
+        "index": "./public",
+        "base": "/",
+        "content": "/content",
+        "site": "/site",
+        "storage": "/storage",
+        "accounts": "/storage/accounts",
+        "cache": "/storage/cache",
+        "sessions": "/storage/sessions"
+    }
+}
