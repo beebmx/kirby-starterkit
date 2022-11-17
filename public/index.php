@@ -1,6 +1,8 @@
 <?php
 
 const KIRBY_HELPER_E = false;
+const KIRBY_HELPER_DUMP = false;
+const KIRBY_HELPER_GO = false;
 
 include '../vendor/autoload.php';
 
