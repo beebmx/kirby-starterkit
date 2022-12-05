@@ -4,7 +4,7 @@ const KIRBY_HELPER_E = false;
 const KIRBY_HELPER_DUMP = false;
 const KIRBY_HELPER_GO = false;
 
-include '../vendor/autoload.php';
+include dirname(__DIR__) . '/vendor/autoload.php';
 
 $kirby = new Kirby([
     'roots' => [
