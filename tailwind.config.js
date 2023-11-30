@@ -1,3 +1,8 @@
+import theme from 'tailwindcss/defaultTheme'
+import colors from 'tailwindcss/colors'
+import forms from '@tailwindcss/forms'
+import typography from '@tailwindcss/typography'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
@@ -6,12 +11,7 @@ module.exports = {
   variants: {
     extend: {}
   },
-  plugins: [
-    require("@tailwindcss/forms"),
-    require("@tailwindcss/typography"),
-    require("@tailwindcss/aspect-ratio"),
-    require("@tailwindcss/line-clamp")
-  ],
+plugins: [forms, typography],
   content: [
     "site/templates/**/*.html",
     "site/templates/**/*.php",
