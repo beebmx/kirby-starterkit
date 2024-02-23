@@ -1,8 +1,23 @@
 {
-    "tabWidth": 4,
-    "wrapAttributes": "preserve-aligned",
-    "sortTailwindcssClasses": true,
     "endWithNewLine": true,
-    "singleQuote": false,
-    "plugins": ["@shufo/prettier-plugin-blade"]
+    "tabWidth": 2,
+    "plugins": ["@shufo/prettier-plugin-blade"],
+    "overrides": [
+        {
+            "files": ["*.js"],
+            "options": {
+                "singleQuote": true,
+                "semi": false
+            }
+        }, {
+            "files": ["*.blade.php"],
+            "options": {
+                "parser": "blade",
+                "printWidth": 240,
+                "sortTailwindcssClasses": true,
+                "tabWidth": 4,
+                "wrapAttributes": "preserve-aligned"
+            }
+        }
+    ]
 }

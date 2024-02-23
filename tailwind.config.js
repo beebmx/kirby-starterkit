@@ -6,16 +6,16 @@ import typography from '@tailwindcss/typography'
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   theme: {
-    extend: {}
+    extend: {},
   },
   variants: {
-    extend: {}
+    extend: {},
   },
-plugins: [forms, typography],
+  plugins: [forms, typography],
   content: [
-    "site/templates/**/*.html",
-    "site/templates/**/*.php",
-    "resources/**/*.js",
-    "resources/**/*.vue"
-  ]
-};
+    'site/templates/**/*.html',
+    'site/templates/**/*.php',
+    'resources/**/*.js',
+    'resources/**/*.vue',
+  ],
+}
