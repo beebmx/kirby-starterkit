@@ -6,6 +6,8 @@ const KIRBY_HELPER_GO = false;
 
 include dirname(__DIR__) . '/vendor/autoload.php';
 
+use Kirby\Cms\App as Kirby;
+
 $kirby = new Kirby([
     'roots' => [
         'index' => __DIR__,

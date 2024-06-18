@@ -18,11 +18,10 @@
         "source": "https://github.com/getkirby/starterkit"
     },
     "require": {
-        "php": "^8.1",
+        "php": "^8.2",
         "getkirby/cms": "^4.0",
         "beebmx/kirby-env": "^4.0",
-        "beebmx/kirby-blade": "^5.0",
-        "k-community/markdown-field": "^2.0"
+        "beebmx/kirby-blade": "^5.1"
     },
     "config": {
         "optimize-autoloader": true,
