@@ -24,6 +24,7 @@ return [
     'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     'hooks' => require_once 'hooks.php',
     'routes' => require_once 'routes.php',
+    'beebmx.kirby-blade.bootstrap' => env('KIRBY_BLADE_BOOTSTRAP', false),
     'beebmx.kirby-blade.views' => $storage . '/views',
     'email' => [
         'transport' => [
