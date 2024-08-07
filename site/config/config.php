@@ -24,7 +24,7 @@ return [
     'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     'hooks' => require_once 'hooks.php',
     'routes' => require_once 'routes.php',
-    'beebmx.kirby-blade.bootstrap' => env('KIRBY_BLADE_BOOTSTRAP', false),
+    'beebmx.kirby-blade.bootstrap' => env('KIRBY_BLADE_BOOTSTRAP', true),
     'beebmx.kirby-blade.views' => $storage . '/views',
     'email' => [
         'transport' => [
@@ -52,5 +52,12 @@ return [
         'ray' => function ($expression) {
             return "<?php ray($expression); ?>";
         },
+    ],
+    'beebmx.kirby-courier' => [
+        //'logo' => fn() => site()->file('logo.png'),
+        'from' => [
+            'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
+            'name' => env('MAIL_FROM_NAME', 'Example'),
+        ],
     ],
 ];

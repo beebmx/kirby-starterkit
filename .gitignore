@@ -26,29 +26,6 @@ Icon
 # NEVER publish these files via Git!
 # -------------SECURITY-------------
 
-# Cache Files
-# ---------------
-
-/storage/cache/*
-!/storage/cache/.gitkeep
-
-# View Files
-# ---------------
-/storage/views/*
-!/storage/views/.gitkeep
-
-# Accounts
-# ---------------
-
-/storage/accounts/*
-!/storage/accounts/.gitkeep
-
-# Sessions
-# ---------------
-
-/storage/sessions/*
-!/storage/sessions/.gitkeep
-
 # License
 # ---------------
 /site/config/.license
@@ -65,6 +42,6 @@ yarn-error.log
 
 # Plugins
 # ---------------
-/site/plugins/kirby-env
 /site/plugins/kirby-blade
-/site/plugins/markdown-field
+/site/plugins/kirby-courier
+/site/plugins/kirby-env
