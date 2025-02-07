@@ -14,5 +14,8 @@ trim_trailing_whitespace = false
 [*.yml]
 indent_size = 2
 
-[{*.vue, *.js}]
+[*.vue]
+indent_size = 2
+
+[*.js]
 indent_size = 2

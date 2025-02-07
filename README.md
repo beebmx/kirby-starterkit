@@ -1,91 +1,45 @@
 # Quick Start
 
 ```sh
-$ git clone git@github.com:beebmx/kirby-starterkit.git
-$ cd kirby-starterkit
-$ touch .env
-$ composer install
+git clone git@github.com:beebmx/kirby-starterkit.git
+cd kirby-starterkit
+cp .env.example .env
+composer install
+npm install
+npm run production
 ```
 
-# Kirby Starterkit
+**Kirby: the CMS that adapts to any project, loved by developers and editors alike.**
+The Starterkit is a full-blown Kirby installation with a lot of example content, blueprints, templates and more.
+It is ideal for new users to explore many of Kirby's options and get to know the Panel.
 
-Kirby is a file-based CMS.
-Easy to setup. Easy to use. Flexible as hell.
+You can learn more about Kirby at [getkirby.com](https://getkirby.com).
 
-## Trial
+### Try Kirby for free
 
-You can try Kirby on your local machine or on a test
-server as long as you need to make sure it is the right
-tool for your next project.
+You can try Kirby and the Starterkit on your local machine or on a test server as long as you need to make sure it is the right tool for your next project. … and when you’re convinced, [buy your license](https://getkirby.com/buy).
 
-## Buy a license
+### Get going
 
-You can purchase your Kirby license at
-<https://getkirby.com/buy>
+Read our guide on [how to get started with Kirby](https://getkirby.com/docs/guide/quickstart).
 
-A Kirby license is valid for a single domain. You can find
-Kirby's license agreement here: <https://getkirby.com/license>
+If you are familiar with Git, you can clone Kirby's Starterkit repository from Github.
 
-## The Plainkit
+    git clone git@github.com:beebmx/kirby-starterkit.git
 
-Kirby's Plainkit is the most minimal setup you can get started with.
-It does not include any content, styles or other kinds of decoration,
-so it's perfect to use this as a starting point for your own project.
+## What's Kirby?
 
-## The Panel
+-   **[getkirby.com](https://getkirby.com)** – Get to know the CMS.
+-   **[Try it](https://getkirby.com/try)** – Take a test ride with our online demo. Or download one of our kits to get started.
+-   **[Documentation](https://getkirby.com/docs/guide)** – Read the official guide, reference and cookbook recipes.
+-   **[Issues](https://github.com/getkirby/kirby/issues)** – Report bugs and other problems.
+-   **[Feedback](https://feedback.getkirby.com)** – You have an idea for Kirby? Share it.
+-   **[Forum](https://forum.getkirby.com)** – Whenever you get stuck, don't hesitate to reach out for questions and support.
+-   **[Discord](https://chat.getkirby.com)** – Hang out and meet the community.
+-   **[YouTube](https://youtube.com/kirbyCasts)** - Watch the latest video tutorials visually with Bastian.
+-   **[Mastodon](https://mastodon.social/@getkirby)** – Spread the word.
+-   **[Bluesky](https://bsky.app/profile/getkirby.com)** – Tell a friend.
+---
 
-You can find the login for Kirby's admin interface at
-http://yourdomain.com/panel. You will be guided through the signup
-process for your first user, when you visit the panel
-for the first time.
-
-## Installation
-
-Kirby does not require a database, which makes it very easy to
-install. Just copy Kirby's files to your server and visit the
-URL for your website in the browser.
-
-**Please check if the invisible .htaccess file has been
-copied to your server correctly**
-
-### Requirements
-
-Kirby runs on PHP 7.1+, Apache or Nginx.
-
-### Download
-
-You can download the latest version of the Starterkit
-from https://download.getkirby.com
-
-### With Git
-
-If you are familiar with Git, you can clone Kirby's
-Starterkit repository from Github.
-
-    git clone https://github.com/getkirby/starterkit.git
-
-## Documentation
-
-<https://getkirby.com/docs>
-
-## Issues
-
-If you have a Github account, please report issues
-directly on Github: <https://github.com/getkirby/kirby/issues>
-
-Otherwise you can use Kirby's forum: https://forum.getkirby.com
-or send us an email: <support@getkirby.com>
-
-## Ideas & Feature Requests
-
-If you have ideas for new features, please submit a ticket in our ideas repository:
-<https://github.com/getkirby/kirby/ideas>
-
-## Support
-
-<https://getkirby.com/support>
-
-## Copyright
-
-© 2009-2019 Bastian Allgeier (Bastian Allgeier GmbH)
-<https://getkirby.com>
+© 2009 Bastian Allgeier
+[getkirby.com](https://getkirby.com) · [License agreement](https://getkirby.com/license)

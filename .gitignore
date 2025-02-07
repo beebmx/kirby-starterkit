@@ -15,6 +15,7 @@ Icon
 # ---------------
 
 /public/build
+/public/hot
 
 # Temporary files
 # ---------------
@@ -33,6 +34,8 @@ Icon
 # Configuration files
 # ---------------
 .env
+.env.backup
+.env.production
 .npmrc
 composer.lock
 package-lock.json

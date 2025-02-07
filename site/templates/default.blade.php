@@ -1,4 +1,3 @@
-@extends('layouts.default')
-@section('content')
-    <h1>{{ $page->title()->html() }}</h1>
-@endsection
+<x-layout>
+    <h1>{{ $page->title() }}</h1>
+</x-layout>

@@ -6,8 +6,18 @@
         {
             "files": ["*.js"],
             "options": {
+                "printWidth": 180,
                 "singleQuote": true,
                 "semi": false
+            }
+        }, {
+            "files": ["*.vue"],
+            "options": {
+                "semi": false,
+                "printWidth": 180,
+                "singleQuote": true,
+                "jsxSingleQuote": false,
+                "vueIndentScriptAndStyle": true
             }
         }, {
             "files": ["*.blade.php"],
