@@ -37,6 +37,7 @@ Icon
 .env.backup
 .env.production
 .npmrc
+composer.phar
 composer.lock
 package-lock.json
 yarn.lock

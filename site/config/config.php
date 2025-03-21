@@ -22,6 +22,7 @@ return [
     ],
     'api' => env('KIRBY_API', true),
     'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
+    'languages' => env('KIRBY LANGUAGES', false),
     'hooks' => require_once 'hooks.php',
     'routes' => require_once 'routes.php',
     'beebmx.kirby-blade.bootstrap' => env('KIRBY_BLADE_BOOTSTRAP', true),
