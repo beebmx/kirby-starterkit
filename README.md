@@ -17,6 +17,12 @@ npm install
 npm run production
 ```
 
+If you need to create a plugin, you can use the following command:
+
+```sh
+composer create-project getkirby/pluginkit site/plugins/plugin-name dev-4-panel --remove-vcs
+```
+
 **Kirby: the CMS that adapts to any project, loved by developers and editors alike.**
 The Starterkit is a full-blown Kirby installation with a lot of example content, blueprints, templates and more.
 It is ideal for new users to explore many of Kirby's options and get to know the Panel.
