@@ -1,5 +1,5 @@
 <?php
 
 return [
-  // your hooks
+    // your hooks
 ];

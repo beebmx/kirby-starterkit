@@ -1,5 +1,5 @@
 <?php
 
 return [
-  // your routes
+    // your routes
 ];

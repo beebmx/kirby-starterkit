@@ -1,0 +1,8 @@
+{
+  "exclude": [
+      "kirby",
+      "site/plugins/kirby-blade",
+      "site/plugins/kirby-courier",
+      "site/plugins/kirby-env"
+  ]
+}

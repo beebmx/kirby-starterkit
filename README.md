@@ -1,5 +1,13 @@
 # Quick Start
 
+The easiest way to get started is to install it via [Herd](https://herd.laravel.com/new/beebmx/kirby-starterkit) with the `Custom Starter Kit` interface or through the command line with laravel's installer:
+
+```sh
+laravel new project-name --using=beebmx/kirby-starterkit
+```
+
+You can also use the traditional way of cloning the repository and installing the dependencies manually. This is a good option if you want to customize the installation or if you are not using Herd.
+
 ```sh
 git clone git@github.com:beebmx/kirby-starterkit.git
 cd kirby-starterkit
