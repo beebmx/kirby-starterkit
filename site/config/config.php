@@ -3,10 +3,8 @@
 use Beebmx\KirbyEnv;
 
 require_once 'helpers.php';
-$base = dirname(__DIR__, 2);
-$storage = $base.'/storage';
 
-KirbyEnv::load($base);
+KirbyEnv::load(dirname(__DIR__, 2));
 
 return [
     'debug' => env('KIRBY_DEBUG', false),
@@ -29,41 +27,12 @@ return [
     ],
     'api' => env('KIRBY_API', true),
     'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
-    'languages' => env('KIRBY LANGUAGES', false),
-    'hooks' => require_once 'hooks.php',
-    'routes' => require_once 'routes.php',
-    'beebmx.kirby-blade.bootstrap' => env('KIRBY_BLADE_BOOTSTRAP', true),
-    'beebmx.kirby-blade.views' => $storage.'/views',
-    'email' => [
-        'transport' => [
-            'type' => env('MAIL_DRIVER', 'mail'),
-            'host' => env('MAIL_HOST', 'smtp.server.com'),
-            'port' => env('MAIL_PORT', 465),
-            'security' => env('MAIL_ENCRYPTION', 'tls'),
-            'auth' => env('MAIL_AUTH', false),
-            'username' => env('MAIL_USERNAME', ''),
-            'password' => env('MAIL_PASSWORD', ''),
-        ],
-    ],
-    'beebmx.kirby-blade.ifs' => [
-        'env' => function ($environment) {
-            return env('KIRBY_ENV', 'production') === $environment;
-        },
-        'local' => function () {
-            return env('KIRBY_ENV', 'production') === 'local';
-        },
-        'production' => function () {
-            return env('KIRBY_ENV', 'production') === 'production';
-        },
-        'productionIf' => function (bool $condition) {
-            return env('KIRBY_ENV', 'production') === 'production' && $condition;
-        },
-    ],
-    'beebmx.kirby-blade.directives' => [
-        'ray' => function ($expression) {
-            return "<?php ray($expression); ?>";
-        },
-    ],
+    'languages' => env('KIRBY_LANGUAGES', false),
+    'email' => require_once __DIR__.'/email.php',
+    'hooks' => require_once __DIR__.'/hooks.php',
+    'routes' => require_once __DIR__.'/routes.php',
+    'thumbs' => require_once __DIR__.'/thumbs.php',
+    'beebmx.kirby-blade' => require_once __DIR__.'/blade.php',
     'beebmx.kirby-courier' => [
         // 'logo' => fn() => site()->file('logo.png'),
         'from' => [

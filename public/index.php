@@ -8,7 +8,7 @@ include dirname(__DIR__).'/vendor/autoload.php';
 
 use Kirby\Cms\App as Kirby;
 
-$kirby = new Kirby([
+echo (new Kirby([
     'roots' => [
         'index' => __DIR__,
         'base' => $base = dirname(__DIR__),
@@ -17,8 +17,8 @@ $kirby = new Kirby([
         'storage' => $storage = $base.'/storage',
         'accounts' => $storage.'/accounts',
         'cache' => $storage.'/cache',
+        'logs' => $storage.'/logs',
+        'license' => $storage.'/license/.license',
         'sessions' => $storage.'/sessions',
     ],
-]);
-
-echo $kirby->render();
+]))->render();
