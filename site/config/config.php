@@ -8,6 +8,7 @@ KirbyEnv::load(dirname(__DIR__, 2));
 
 return [
     'debug' => env('KIRBY_DEBUG', false),
+    'editor' => env('KIRBY_EDITOR', 'phpstorm'),
     'app' => [
         'key' => env('KIRBY_KEY'),
         'url' => env('APP_URL'),
@@ -19,13 +20,21 @@ return [
             'compiler' => env('KIRBY_VUE_COMPILER', false),
         ],
     ],
+    'cache' => [
+        'pages' => [
+            'active' => env('KIRBY_CACHE_PAGES', false),
+            'type' => env('KIRBY_CACHE_TYPE', 'file'),
+        ],
+    ],
     'session' => [
         'durationNormal' => (int) env('KIRBY_SESSION_DURATION', 7200),
         'durationLong' => (int) env('KIRBY_SESSION_LONG_DURATION', 1209600),
         'timeout' => (int) env('KIRBY_SESSION_TIMEOUT', 1800),
         'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     ],
-    'api' => env('KIRBY_API', true),
+    'api' => [
+        'routes' => require_once __DIR__.'/apiRoutes.php',
+    ],
     'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     'languages' => env('KIRBY_LANGUAGES', false),
     'email' => require_once __DIR__.'/email.php',
