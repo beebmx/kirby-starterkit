@@ -16,8 +16,8 @@
     ],
     "support": {
         "email": "support@getkirby.com",
-        "issues": "https://github.com/getkirby/starterkit/issues",
-        "source": "https://github.com/getkirby/starterkit"
+        "issues": "https://github.com/beebmx/kirby-starterkit/issues",
+        "source": "https://github.com/beebmx/kirby-starterkit"
     },
     "require": {
         "php": "^8.3",

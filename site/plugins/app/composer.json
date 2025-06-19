@@ -1,0 +1,21 @@
+{
+	"name": "beebmx/app",
+	"description": "Kirby App Plugin",
+	"license": "MIT",
+	"type": "kirby-plugin",
+	"version": "1.0.0",
+	"authors": [
+		{
+			"name": "Bee business",
+            "homepage": "https://beeb.mx"
+		}
+	],
+	"require": {
+		"getkirby/composer-installer": "^1.1"
+	},
+	"config": {
+		"allow-plugins": {
+			"getkirby/composer-installer": true
+		}
+	}
+}

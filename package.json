@@ -6,7 +6,10 @@
         "development": "npm run dev",
         "build": "vite build",
         "prod": "npm run build",
-        "production": "npm run build"
+        "production": "npm run build",
+        "app-dev": "cd site/plugins/app && npm run dev",
+        "app-serve": "cd site/plugins/app && npm run serve",
+        "app": "cd site/plugins/app && npm run build"
     },
     "devDependencies": {
         "@shufo/prettier-plugin-blade": "^1.9",
