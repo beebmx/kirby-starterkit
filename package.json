@@ -9,6 +9,7 @@
         "production": "npm run build",
         "app-dev": "cd site/plugins/app && npm run dev",
         "app-serve": "cd site/plugins/app && npm run serve",
+        "app-setup": "cd site/plugins/app && npm run setup",
         "app": "cd site/plugins/app && npm run build"
     },
     "devDependencies": {
