@@ -24,7 +24,8 @@
         "getkirby/cms": "^5.0",
         "beebmx/kirby-env": "^5.0",
         "beebmx/kirby-blade": "^6.0",
-        "beebmx/kirby-courier": "^1.0"
+        "beebmx/kirby-courier": "^1.0",
+        "beebmx/kirby-sign": "^1.0"
     },
     "require-dev": {
         "spatie/ray": "^1.40",

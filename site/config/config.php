@@ -32,11 +32,10 @@ return [
         'timeout' => (int) env('KIRBY_SESSION_TIMEOUT', 1800),
         'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     ],
-    'api' => [
-        'routes' => require_once __DIR__.'/apiRoutes.php',
-    ],
     'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     'languages' => env('KIRBY_LANGUAGES', false),
+    'api' => ['routes' => require_once __DIR__.'/api.php'],
+    'auth' => require_once __DIR__.'/auth.php',
     'email' => require_once __DIR__.'/email.php',
     'hooks' => require_once __DIR__.'/hooks.php',
     'routes' => require_once __DIR__.'/routes.php',

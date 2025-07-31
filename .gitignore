@@ -46,6 +46,4 @@ yarn-error.log
 
 # Plugins
 # ---------------
-/site/plugins/kirby-blade
-/site/plugins/kirby-courier
-/site/plugins/kirby-env
+/site/plugins/kirby-*
