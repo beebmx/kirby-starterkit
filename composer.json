@@ -1,7 +1,7 @@
 {
     "name": "beebmx/kirby-starterkit",
     "type": "project",
-    "description": "Beeb.mx Kirby Starter Kit",
+    "description": "Beeb.mx Starter Kit for Kirby CMS",
     "keywords": ["kirby", "cms", "starterkit"],
     "homepage": "https://getkirby.com",
     "authors": [

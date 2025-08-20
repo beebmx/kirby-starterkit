@@ -41,7 +41,7 @@ return [
     'routes' => require_once __DIR__.'/routes.php',
     'thumbs' => require_once __DIR__.'/thumbs.php',
     'beebmx.kirby-blade' => require_once __DIR__.'/blade.php',
-    'beebmx.kirby-courier' => [
+    'beebmx.courier' => [
         // 'logo' => fn() => site()->file('logo.png'),
         'from' => [
             'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
