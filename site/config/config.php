@@ -13,13 +13,6 @@ return [
         'key' => env('KIRBY_KEY'),
         'url' => env('APP_URL'),
     ],
-    'panel' => [
-        'install' => env('KIRBY_INSTALL', false),
-        'slug' => env('KIRBY_PANEL', 'panel'),
-        'vue' => [
-            'compiler' => env('KIRBY_VUE_COMPILER', false),
-        ],
-    ],
     'cache' => [
         'pages' => [
             'active' => env('KIRBY_CACHE_PAGES', false),
@@ -32,12 +25,12 @@ return [
         'timeout' => (int) env('KIRBY_SESSION_TIMEOUT', 1800),
         'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     ],
-    'cookieName' => env('KIRBY_SESSION', 'kirby_session'),
     'languages' => env('KIRBY_LANGUAGES', false),
     'api' => ['routes' => require_once __DIR__.'/api.php'],
     'auth' => require_once __DIR__.'/auth.php',
     'email' => require_once __DIR__.'/email.php',
     'hooks' => require_once __DIR__.'/hooks.php',
+    'panel' => require_once __DIR__.'/panel.php',
     'routes' => require_once __DIR__.'/routes.php',
     'thumbs' => require_once __DIR__.'/thumbs.php',
     'beebmx.kirby-blade' => require_once __DIR__.'/blade.php',
@@ -47,5 +40,8 @@ return [
             'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
             'name' => env('MAIL_FROM_NAME', 'Example'),
         ],
+    ],
+    'beebmx.scheduler' => [
+        'tasks' => __DIR__.'/tasks.php',
     ],
 ];
