@@ -24,6 +24,7 @@
         "getkirby/cms": "^5.0",
         "beebmx/kirby-blade": "^6.0",
         "beebmx/kirby-courier": "^1.0",
+        "beebmx/kirby-email-plus": "^1.1",
         "beebmx/kirby-enum": "^1.0",
         "beebmx/kirby-env": "^5.0",
         "beebmx/kirby-scheduler": "^1.0",

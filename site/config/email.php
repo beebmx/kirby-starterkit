@@ -2,7 +2,7 @@
 
 return [
     'transport' => [
-        'type' => env('MAIL_DRIVER', 'mail'),
+        'type' => env('MAIL_TYPE', 'mail'),
         'host' => env('MAIL_HOST', 'smtp.server.com'),
         'port' => env('MAIL_PORT', 465),
         'auth' => env('MAIL_AUTH', false),

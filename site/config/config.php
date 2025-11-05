@@ -7,13 +7,10 @@ require_once 'helpers.php';
 KirbyEnv::load(dirname(__DIR__, 2));
 
 return [
-    'app' => [
-        'key' => env('KIRBY_KEY'),
-        'url' => env('APP_URL'),
-    ],
     'debug' => env('KIRBY_DEBUG', false),
     'editor' => env('KIRBY_EDITOR', 'phpstorm'),
     'languages' => env('KIRBY_LANGUAGES', false),
+    'app' => require __DIR__.'/app.php',
     'api' => ['routes' => require __DIR__.'/api.php'],
     'auth' => require __DIR__.'/auth.php',
     'cache' => require __DIR__.'/cache.php',
@@ -23,13 +20,8 @@ return [
     'routes' => require __DIR__.'/routes.php',
     'session' => require __DIR__.'/session.php',
     'thumbs' => require __DIR__.'/thumbs.php',
+    'beebmx.courier' => require __DIR__.'/courier.php',
+    'beebmx.email-plus' => require __DIR__.'/plus.php',
     'beebmx.kirby-blade' => require __DIR__.'/blade.php',
     'beebmx.scheduler.tasks' => __DIR__.'/tasks.php',
-    'beebmx.courier' => [
-        // 'logo' => fn() => site()->file('logo.png'),
-        'from' => [
-            'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-            'name' => env('MAIL_FROM_NAME', 'Example'),
-        ],
-    ],
 ];
