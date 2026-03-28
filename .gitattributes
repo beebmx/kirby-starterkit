@@ -3,7 +3,6 @@
 .gitattributes export-ignore
 
 # Tests
-/tests export-ignore
 phpunit.xml.dist export-ignore
 
 # Others
